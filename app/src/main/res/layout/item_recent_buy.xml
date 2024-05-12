@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="7dp"
+    android:layout_margin="10dp"
+    >
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/popularFoodImageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="5dp"
+                android:padding="5dp"
+                android:scaleType="centerCrop"
+
+                android:src="@drawable/bannar3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+
+
+                app:riv_corner_radius="10dip"
+                app:riv_mutate_background="false"
+                app:riv_oval="false"
+                app:riv_tile_mode="repeat" />
+
+            <TextView
+                android:id="@+id/foodNameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:fontFamily="@font/akaya_telivigala"
+                app:layout_constraintBottom_toTopOf="@+id/quantities"
+                app:layout_constraintStart_toEndOf="@+id/popularFoodImageView"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/quantities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textColor="@color/black"
+                android:fontFamily="@font/akaya_telivigala"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/popularFoodImageView"
+                app:layout_constraintTop_toBottomOf="@+id/foodNameTv" />
+
+            <TextView
+                android:id="@+id/quantitiesTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="8"
+                android:textColor="@color/green"
+                app:layout_constraintBottom_toBottomOf="@+id/quantities"
+                app:layout_constraintStart_toEndOf="@+id/quantities"
+                app:layout_constraintTop_toBottomOf="@+id/foodNameTv" />
+
+            <TextView
+                android:id="@+id/priceTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="$10"
+                android:textSize="17sp"
+                android:textColor="@color/green"
+                android:fontFamily="@font/akaya_telivigala"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -30,4 +30,19 @@
         android:name="com.inteligenixsolutions.tastefood.ui.fragment.ProfileFragment"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/bottomSheetMenuFragment"
+        android:name="com.inteligenixsolutions.tastefood.ui.fragment.BottomSheetMenuFragment"
+        android:label="fragment_bottom_sheet_menu"
+        tools:layout="@layout/fragment_bottom_sheet_menu" />
+    <fragment
+        android:id="@+id/notificationBottomSheetFragment"
+        android:name="com.inteligenixsolutions.tastefood.ui.fragment.NotificationBottomSheetFragment"
+        android:label="fragment_notification_bottom_sheet"
+        tools:layout="@layout/fragment_notification_bottom_sheet" />
+    <fragment
+        android:id="@+id/congratsFragment"
+        android:name="com.inteligenixsolutions.tastefood.ui.fragment.CongratsFragment"
+        android:label="fragment_congrats"
+        tools:layout="@layout/fragment_congrats" />
 </navigation>

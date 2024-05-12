@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".ui.activity.MainActivity">
 
 
@@ -16,15 +17,17 @@
         android:fontFamily="@font/aclonica"
         android:text="Explore Your Favorite Food"
         android:textColor="@color/black"
+        android:background="@color/white"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/notificationAlert"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
+        android:background="@color/white"
         android:src="@drawable/notification_bell"
         app:layout_constraintBottom_toBottomOf="@+id/exploreYourFavoriteFoodTv"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,6 +38,7 @@
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,9 +52,14 @@
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:itemRippleColor="@color/gray"
+
+        android:background="@drawable/bottom_nav_back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_nav" />
+        app:menu="@menu/bottom_nav"
+        app:itemIconTint="@color/green"
+        app:itemTextColor="@color/bottom_item_select"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

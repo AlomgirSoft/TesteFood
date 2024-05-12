@@ -2,4 +2,5 @@
     <string name="app_name">TasteFood</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="deflate_web_client_id">1013825861761-2q7bcaqa1qmep6em8s45m3hpe2ojiqhp.apps.googleusercontent.com</string>
 </resources>
